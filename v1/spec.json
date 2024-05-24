@@ -1,0 +1,54 @@
+{
+    "nodes": [
+        { "id": 0, "labels": [""],
+          "properties": {
+            "key": {
+                "types": [
+                    {
+                      "type": "int",
+                      "count": 1
+                    },
+                    {
+                      "type": "array",
+                      "count": 1
+                    }
+                ],
+                "count": 1
+            }
+          },
+          "count": 1
+        }
+    ],
+
+    "edges": [
+       { "id": 0, "edge_type": "", "start_node_id": 0, "end_node_id": 0,
+         "properties": {
+           "key": {
+             "types": [
+               {
+                 "fully_typed_array_enabled_by_memgraph_flag_ID1": {
+                   "types": [ { "type": "int", "count": 1 }, { "type": "float", "count": 1 } ],
+                   "count": 1
+                 }
+               }
+             ],
+             "count": 1
+           }
+         },
+         "count": 1
+       }
+    ],
+
+    "index": {
+        "labels": [""],
+        "properties": [""]
+    },
+    "unique": {
+        "labels": [""],
+        "properties": [""]
+    },
+    "existence": {
+        "labels": [""],
+        "properties": [""]
+    }
+}
