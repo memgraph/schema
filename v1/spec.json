@@ -27,7 +27,7 @@
   }],
 
   "index": [
-      { "labels": [""], "properties": [""] }
+      { "labels": [""], "properties": [""], "count": 0, "examples": [{}] }
   ],
   "unique": [
       { "labels": [""], "properties": [""] }
