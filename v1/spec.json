@@ -1,54 +1,38 @@
 {
-    "nodes": [
-        { "id": 0, "labels": [""],
-          "properties": {
-            "key": {
-                "types": [
-                    {
-                      "type": "int",
-                      "count": 1
-                    },
-                    {
-                      "type": "array",
-                      "count": 1
-                    }
-                ],
-                "count": 1
-            }
-          },
-          "count": 1
-        }
-    ],
+  "nodes": [{
+    "id": 0, "labels": [""], "count": 1,
+    "properties": [{
+      "key": "property_key_0", "count": 1, "types": [
+        { "type": "Null", "count": 1, "examples": [{}] },
+        { "type": "String", "count": 1, "examples": [{}] },
+        { "type": "Boolean", "count": 1, "examples": [{}] },
+        { "type": "Integer", "count": 1, "examples": [{}] },
+        { "type": "Float", "count": 1, "examples": [{}] },
+        { "type": "List", "count": 1, "examples": [{}] },
+        { "type": "Map", "count": 1, "examples": [{}] },
+        { "type": "Duration", "count": 1, "examples": [{}] },
+        { "type": "Date", "count": 1, "examples": [{}] },
+        { "type": "LocalTime", "count": 1, "examples": [{}] },
+        { "type": "LocalDateTime", "count": 1, "examples": [{}] },
+        { "type": "ZonedDateTime", "count": 1, "examples": [{}] }
+      ]
+    }],
+    "examples": [ { "gid": 0 } ]
+  }],
 
-    "edges": [
-       { "id": 0, "edge_type": "", "start_node_id": 0, "end_node_id": 0,
-         "properties": {
-           "key": {
-             "types": [
-               {
-                 "fully_typed_array_enabled_by_memgraph_flag_ID1": {
-                   "types": [ { "type": "int", "count": 1 }, { "type": "float", "count": 1 } ],
-                   "count": 1
-                 }
-               }
-             ],
-             "count": 1
-           }
-         },
-         "count": 1
-       }
-    ],
+  "edges": [{
+    "id": 0, "edge_type": "", "start_node_id": 0, "end_node_id": 0, "count": 1,
+    "properties": [{}],
+    "examples": [{}]
+  }],
 
-    "index": {
-        "labels": [""],
-        "properties": [""]
-    },
-    "unique": {
-        "labels": [""],
-        "properties": [""]
-    },
-    "existence": {
-        "labels": [""],
-        "properties": [""]
-    }
+  "index": [
+      { "labels": [""], "properties": [""] }
+  ],
+  "unique": [
+      { "labels": [""], "properties": [""] }
+  ],
+  "existence": [
+      { "labels": [""], "properties": [""] }
+  ]
 }
