@@ -14,7 +14,8 @@
         { "type": "Date", "count": 1, "examples": [{}] },
         { "type": "LocalTime", "count": 1, "examples": [{}] },
         { "type": "LocalDateTime", "count": 1, "examples": [{}] },
-        { "type": "ZonedDateTime", "count": 1, "examples": [{}] }
+        { "type": "ZonedDateTime", "count": 1, "examples": [{}] },
+        { "type": "Enum", "count": 1, "examples": [{}] }
       ]
     }],
     "examples": [ { "gid": 0 } ]
