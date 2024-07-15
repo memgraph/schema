@@ -10,6 +10,7 @@
                 {
                     "key": "name",
                     "count": 2,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -20,6 +21,7 @@
                 {
                     "key": "age",
                     "count": 2,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -29,7 +31,8 @@
                 },
                 {
                     "key": "occupation",
-                    "count": 1,
+                    "count": 2,
+		    "filling_factor": "50",
                     "types": [
                         {
                             "type": "String",
@@ -54,6 +57,7 @@
                 {
                     "key": "name",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -74,16 +78,18 @@
                 {
                     "key": "name",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
                             "count": 1
                         }
-                    ],
+                    ]
                 },
                 {
                     "key": "interests",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "List",
@@ -103,6 +109,7 @@
                 {
                     "key": "title",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -124,6 +131,7 @@
                 {
                     "key": "since",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -143,6 +151,7 @@
                 {
                     "key": "since",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -162,12 +171,13 @@
                 {
                     "key": "since",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
                             "count": 1
                         }
-                    ],
+                    ]
                 }
             ]
         },
@@ -180,7 +190,8 @@
             "properties": [
                 {
                     "key": "since",
-                    "count": 1,
+                    "count": 2,
+		    "filling_factor": "50",
                     "types": [
                         {
                             "type": "Integer",
@@ -204,6 +215,7 @@
                 {
                     "key": "start",
                     "count": 1,
+		    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -238,7 +250,7 @@
                 "IS_STUDENT"
             ],
             "properties": [],
-            "count": 1,
+            "count": 1
         },
         {
             "edge_type": [
