@@ -7,3 +7,8 @@ The standard should be the basis for building many different applications levera
 * graph query language code completion
 * tools to assist with schema changes by estimating the implications
 * LLM and, in general, AI applications.
+
+## v1
+
+* [example graph](v1/examples/create_example.cypher)
+* [example schema](v1/examples/schema_example.json)
