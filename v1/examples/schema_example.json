@@ -10,7 +10,7 @@
                 {
                     "key": "name",
                     "count": 2,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -21,7 +21,7 @@
                 {
                     "key": "age",
                     "count": 2,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -32,7 +32,7 @@
                 {
                     "key": "occupation",
                     "count": 2,
-		    "filling_factor": "50",
+                    "filling_factor": "50",
                     "types": [
                         {
                             "type": "String",
@@ -57,7 +57,7 @@
                 {
                     "key": "name",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -78,7 +78,7 @@
                 {
                     "key": "name",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
@@ -89,7 +89,7 @@
                 {
                     "key": "interests",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "List",
@@ -109,10 +109,32 @@
                 {
                     "key": "title",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "String",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "key": "status",
+                    "count": 1,
+                    "filling_factor": 100.00,
+                    "types": [
+                        {
+                            "type": "Enum::Status",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "key": "location",
+                    "count": 1,
+                    "filling_factor": 100.00,
+                    "types": [
+                        {
+                            "type": "Point3D",
                             "count": 1
                         }
                     ]
@@ -120,6 +142,7 @@
             ]
         }
     ],
+
     "edges": [
         {
             "id": 0,
@@ -131,7 +154,7 @@
                 {
                     "key": "since",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -151,7 +174,7 @@
                 {
                     "key": "since",
                     "count": 1,
-		    "filling_factor": "100",
+                    "filling_factor": "100",
                     "types": [
                         {
                             "type": "Integer",
@@ -226,6 +249,7 @@
             ]
         }
     ],
+
     "node_indexes": [
         {
             "labels": [
@@ -244,6 +268,7 @@
             "count": 4
         }
     ],
+
     "edge_indexes": [
         {
             "edge_type": [
@@ -262,6 +287,7 @@
             "count": 4
         }
     ],
+
     "node_constraints": [
         {
             "type": "unique",
@@ -280,6 +306,13 @@
             "properties": [
                 "name"
             ]
+        }
+    ],
+
+    "enums": [
+        {
+            "name": "Status",
+            "values": [ "Good", "Okay", "Bad" ]
         }
     ]
 }

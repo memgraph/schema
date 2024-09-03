@@ -2,7 +2,7 @@
   "nodes": [{
     "id": 0, "labels": [""], "count": 1,
     "properties": [{
-      "key": "property_key_0", "count": 1, "types": [
+      "key": "property_key_0", "count": 1, "filling_factor": 100.00, "types": [
         { "type": "Null", "count": 1, "examples": [{}] },
         { "type": "String", "count": 1, "examples": [{}] },
         { "type": "Boolean", "count": 1, "examples": [{}] },
@@ -29,16 +29,20 @@
     "examples": [{}]
   }],
 
-  "index": [
+  "node_indexes": [
       { "labels": [""], "properties": [""], "count": 0, "examples": [{}] }
   ],
 
-  "unique": [
-      { "labels": [""], "properties": [""] }
+  "edge_indexes": [
+      { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] }
   ],
 
-  "existence": [
-      { "labels": [""], "properties": [""] }
+  "node_constraints": [
+      { "type": "unique|existence", "labels": [""], "properties": [""] }
+  ],
+
+  "edge_constraints": [
+      { "type": "unique|existence", "edge_type": "", "properties": [""] }
   ],
 
   "enums": [
