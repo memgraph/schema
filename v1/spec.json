@@ -15,7 +15,9 @@
         { "type": "LocalTime", "count": 1, "examples": [{}] },
         { "type": "LocalDateTime", "count": 1, "examples": [{}] },
         { "type": "ZonedDateTime", "count": 1, "examples": [{}] },
-        { "type": "Enum", "count": 1, "examples": [{}] }
+        { "type": "Enum::Name", "count": 1, "examples": [{}] },
+        { "type": "Point2D", "count": 1, "examples": [{}] },
+        { "type": "Point3D", "count": 1, "examples": [{}] }
       ]
     }],
     "examples": [ { "gid": 0 } ]
@@ -30,10 +32,16 @@
   "index": [
       { "labels": [""], "properties": [""], "count": 0, "examples": [{}] }
   ],
+
   "unique": [
       { "labels": [""], "properties": [""] }
   ],
+
   "existence": [
       { "labels": [""], "properties": [""] }
+  ],
+
+  "enums": [
+      { "name": "", "values": [""] }
   ]
 }
