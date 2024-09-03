@@ -8,6 +8,8 @@ The standard should be the basis for building many different applications levera
 * tools to assist with schema changes by estimating the implications
 * LLM and, in general, AI applications.
 
+NOTE: `.json` examples are formatter using https://jsonformatter.curiousconcept.com/ (2 Space Tab).
+
 ## v1
 
 * [example graph](v1/examples/create_example.cypher)
