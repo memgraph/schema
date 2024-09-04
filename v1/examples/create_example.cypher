@@ -1,9 +1,11 @@
+CREATE ENUM Status VALUES { Good, Okay, Bad };
+
 CREATE
     (a:Person {name:'John', age:30}),
     (b:Person :Child {name:'Nick'}),
     (c:Person {name:'Helen', age:29, occupation:'student'}),
     (d:Person :Student {name:'Bob', interests: ['programming', 'math']}),
-    (e:School {title: 'School 1'}),
+    (e:School {title: 'School 1', status: Status::Good, location: point({x:1, y:2, z:3, crs:'wgs-84-3d'})}),
     (a)-[:IS_FAMILY {since:2015}]->(b),
     (a)-[:IS_FAMILY {since: 2010}]->(c),
     (b)-[:IS_FAMILY {since:2015}]->(c),
