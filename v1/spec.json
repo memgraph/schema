@@ -1,6 +1,6 @@
 {
   "nodes": [{
-    "id": 0, "labels": [""], "count": 1,
+    "labels": [""], "count": 1,
     "properties": [{
       "key": "property_key_0", "count": 1, "filling_factor": 100.00, "types": [
         { "type": "Null", "count": 1, "examples": [{}] },
@@ -19,14 +19,12 @@
         { "type": "Point2D", "count": 1, "examples": [{}] },
         { "type": "Point3D", "count": 1, "examples": [{}] }
       ]
-    }],
-    "examples": [ { "gid": 0 } ]
+    }]
   }],
 
   "edges": [{
-    "id": 0, "edge_type": "", "start_node_id": 0, "end_node_id": 0, "count": 1,
-    "properties": [{}],
-    "examples": [{}]
+    "edge_type": "", "start_node_labels": [""], "end_node_labels": [""], "count": 1,
+    "properties": [{}]
   }],
 
   "node_indexes": [

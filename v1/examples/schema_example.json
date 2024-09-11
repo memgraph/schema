@@ -1,7 +1,6 @@
 {
   "nodes":[
     {
-      "id":0,
       "labels":[
         "Person"
       ],
@@ -47,7 +46,6 @@
       ]
     },
     {
-      "id":1,
       "labels":[
         "Person",
         "Child"
@@ -68,7 +66,6 @@
       ]
     },
     {
-      "id":2,
       "labels":[
         "Person",
         "Student"
@@ -100,7 +97,6 @@
       ]
     },
     {
-      "id":3,
       "labels":[
         "School"
       ],
@@ -144,10 +140,14 @@
   ],
   "edges":[
     {
-      "id":0,
       "edge_type":":IS_FAMILY",
-      "start_node_id":0,
-      "end_node_id":1,
+      "start_node_labels": [
+        "Person"
+      ],
+      "end_node_labels":[
+        "Person",
+        "Child"
+      ],
       "count":1,
       "properties":[
         {
@@ -164,10 +164,13 @@
       ]
     },
     {
-      "id":1,
       "edge_type":":IS_FAMILY",
-      "start_node_id":0,
-      "end_node_id":0,
+      "start_node_labels": [
+        "Person"
+      ],
+      "end_node_labels": [
+        "Person"
+      ],
       "count":1,
       "properties":[
         {
@@ -184,10 +187,14 @@
       ]
     },
     {
-      "id":2,
       "edge_type":":IS_FAMILY",
-      "start_node_id":1,
-      "end_node_id":0,
+      "start_node_labels":[
+        "Person",
+        "Child"
+      ],
+      "end_node_labels": [
+        "Person"
+      ],
       "count":1,
       "properties":[
         {
@@ -204,10 +211,14 @@
       ]
     },
     {
-      "id":3,
       "edge_type":":IS_FAMILY",
-      "start_node_id":0,
-      "end_node_id":2,
+      "start_node_labels": [
+        "Person"
+      ],
+      "end_node_labels":[
+        "Person",
+        "Student"
+      ],
       "count":2,
       "properties":[
         {
@@ -228,11 +239,15 @@
       ]
     },
     {
-      "id":4,
       "edge_type":":IS_STUDENT",
       "count":1,
-      "start_node_id":1,
-      "end_node_id":3,
+      "start_node_labels":[
+        "Person",
+        "Child"
+      ],
+      "end_node_labels":[
+        "School"
+      ],
       "properties":[
         {
           "key":"start",
