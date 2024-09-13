@@ -37,10 +37,6 @@
             {
               "type":"String",
               "count":1
-            },
-            {
-              "type":"Null",
-              "count":1
             }
           ]
         }
@@ -217,10 +213,6 @@
           "types":[
             {
               "type":"Integer",
-              "count":1
-            },
-            {
-              "type":"Null",
               "count":1
             }
           ]
