@@ -31,7 +31,7 @@
         },
         {
           "key":"occupation",
-          "count":2,
+          "count":1,
           "filling_factor":50.00,
           "types":[
             {
@@ -208,7 +208,7 @@
       "properties":[
         {
           "key":"since",
-          "count":2,
+          "count":1,
           "filling_factor":50.00,
           "types":[
             {
