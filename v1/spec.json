@@ -30,19 +30,21 @@
   }],
 
   "node_indexes": [
-      { "labels": [""], "properties": [""], "count": 0, "examples": [{}] }
+      { "labels": [""], "properties": [""], "count": 0, "examples": [{}] },
+      { "labels": [""], "properties": [""], "type": "label|label+property|label+property_point", "count": 0, "examples": [{}] }
   ],
 
   "edge_indexes": [
-      { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] }
+      { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] },
+      { "edge_type": [""], "properties": [""], "type": "label|label+property|label+property_point", "count": 0, "examples": [{}] }
   ],
 
   "node_constraints": [
-      { "type": "unique|existence", "labels": [""], "properties": [""] }
+      { "type": "unique|existence|typed", "labels": [""], "properties": [""] }
   ],
 
   "edge_constraints": [
-      { "type": "unique|existence", "edge_type": "", "properties": [""] }
+      { "type": "unique|existence|typed", "edge_type": "", "properties": [""] }
   ],
 
   "enums": [
