@@ -31,15 +31,11 @@
         },
         {
           "key":"occupation",
-          "count":2,
+          "count":1,
           "filling_factor":50.00,
           "types":[
             {
               "type":"String",
-              "count":1
-            },
-            {
-              "type":"Null",
               "count":1
             }
           ]
@@ -212,15 +208,11 @@
       "properties":[
         {
           "key":"since",
-          "count":2,
+          "count":1,
           "filling_factor":50.00,
           "types":[
             {
               "type":"Integer",
-              "count":1
-            },
-            {
-              "type":"Null",
               "count":1
             }
           ]
