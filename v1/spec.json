@@ -30,19 +30,23 @@
   }],
 
   "node_indexes": [
-      { "labels": [""], "properties": [""], "count": 0, "examples": [{}] }
+      { "labels": [""], "properties": [""], "count": 0, "examples": [{}] },
+      { "labels": [""], "properties": [""], "count": 0, "examples": [{}],
+        "type": "label|label+property|label+property_point|label_text|label+property_text" }
   ],
 
   "edge_indexes": [
-      { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] }
+      { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] },
+      { "edge_type": "", "properties": [""],  "count": 0, "examples": [{}],
+        "type": "edge_type|edge_type+property|edge_type+property_point|label_text|label+property_text" }
   ],
 
   "node_constraints": [
-      { "type": "unique|existence", "labels": [""], "properties": [""] }
+      { "type": "unique|existence|data_type", "labels": [""], "properties": [""], "data_type": "<DATA_TYPE>" }
   ],
 
   "edge_constraints": [
-      { "type": "unique|existence", "edge_type": "", "properties": [""] }
+      { "type": "unique|existence|data_type", "edge_type": "", "properties": [""], "data_type": "<DATA_TYPE>" }
   ],
 
   "enums": [
