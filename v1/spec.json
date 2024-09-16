@@ -46,7 +46,7 @@
   ],
 
   "edge_constraints": [
-      { "type": "unique|existence|data_type", "edge_type": "", "properties": [""] }
+      { "type": "unique|existence|data_type", "edge_type": "", "properties": [""], "data_type": "<DATA_TYPE>" }
   ],
 
   "enums": [
