@@ -266,6 +266,26 @@
         "name"
       ],
       "count":4
+    },
+    {
+      "type":"label_text",
+      "labels":[
+        "Person"
+      ],
+      "properties":[
+        
+      ],
+      "count":4
+    },
+    {
+      "type":"label+property_point",
+      "labels":[
+        "School"
+      ],
+      "properties":[
+        "location"
+      ],
+      "count":1
     }
   ],
   "edge_indexes":[
@@ -306,6 +326,16 @@
       "properties":[
         "name"
       ]
+    },
+    {
+      "type":"data_type",
+      "labels":[
+        "Person"
+      ],
+      "properties":[
+        "age"
+      ],
+      "data_type":"INTEGER"
     }
   ],
   "enums":[
