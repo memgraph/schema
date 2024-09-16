@@ -36,7 +36,7 @@
 
   "edge_indexes": [
       { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] },
-      { "edge_type": [""], "properties": [""], "type": "label|label+property|label+property_point", "count": 0, "examples": [{}] }
+      { "edge_type": "", "properties": [""], "type": "label|label+property|label+property_point", "count": 0, "examples": [{}] }
   ],
 
   "node_constraints": [
