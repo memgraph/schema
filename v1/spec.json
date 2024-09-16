@@ -19,12 +19,14 @@
         { "type": "Point2D", "count": 1, "examples": [{}] },
         { "type": "Point3D", "count": 1, "examples": [{}] }
       ]
-    }]
+    }],
+    "examples": [{}]
   }],
 
   "edges": [{
     "edge_type": "", "start_node_labels": [""], "end_node_labels": [""], "count": 1,
-    "properties": [{}]
+    "properties": [{}],
+    "examples": [{}]
   }],
 
   "node_indexes": [
