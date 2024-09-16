@@ -20,7 +20,7 @@
         { "type": "Point3D", "count": 1, "examples": [{}] }
       ]
     }],
-    "examples": [{}]
+    "examples": [{ "gid": 0 }]
   }],
 
   "edges": [{
