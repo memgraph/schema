@@ -137,7 +137,7 @@
   "edges":[
     {
       "edge_type":":IS_FAMILY",
-      "start_node_labels": [
+      "start_node_labels":[
         "Person"
       ],
       "end_node_labels":[
@@ -161,10 +161,10 @@
     },
     {
       "edge_type":":IS_FAMILY",
-      "start_node_labels": [
+      "start_node_labels":[
         "Person"
       ],
-      "end_node_labels": [
+      "end_node_labels":[
         "Person"
       ],
       "count":1,
@@ -188,7 +188,7 @@
         "Person",
         "Child"
       ],
-      "end_node_labels": [
+      "end_node_labels":[
         "Person"
       ],
       "count":1,
@@ -208,7 +208,7 @@
     },
     {
       "edge_type":":IS_FAMILY",
-      "start_node_labels": [
+      "start_node_labels":[
         "Person"
       ],
       "end_node_labels":[
