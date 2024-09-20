@@ -136,7 +136,7 @@
   ],
   "edges":[
     {
-      "edge_type":":IS_FAMILY",
+      "type":":IS_FAMILY",
       "start_node_labels":[
         "Person"
       ],
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "edge_type":":IS_FAMILY",
+      "type":":IS_FAMILY",
       "start_node_labels":[
         "Person"
       ],
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "edge_type":":IS_FAMILY",
+      "type":":IS_FAMILY",
       "start_node_labels":[
         "Person",
         "Child"
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "edge_type":":IS_FAMILY",
+      "type":":IS_FAMILY",
       "start_node_labels":[
         "Person"
       ],
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "edge_type":":IS_STUDENT",
+      "type":":IS_STUDENT",
       "count":1,
       "start_node_labels":[
         "Person",
