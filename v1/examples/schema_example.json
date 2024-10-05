@@ -4,7 +4,7 @@
       "labels":[
         "Person"
       ],
-      "count":2,
+      "count":3,
       "properties":[
         {
           "key":"name",
@@ -24,17 +24,28 @@
           "types":[
             {
               "type":"Integer",
-              "count":2
+              "count":3
             }
           ]
         },
         {
           "key":"occupation",
           "count":1,
-          "filling_factor":50.00,
+          "filling_factor":66.67,
           "types":[
             {
               "type":"String",
+              "count":2
+            }
+          ]
+        },
+        {
+          "key":"embeddign",
+          "count":1,
+          "filling_factor":33.33,
+          "types":[
+            {
+              "type":"List",
               "count":1
             }
           ]
@@ -291,6 +302,16 @@
       ],
       "properties":[
         "location"
+      ],
+      "count":1
+    },
+    {
+      "type":"label+property_vector",
+      "labels":[
+        "Person"
+      ],
+      "properties":[
+        "embedding"
       ],
       "count":1
     }
