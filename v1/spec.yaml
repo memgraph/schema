@@ -1,4 +1,127 @@
+# LPG YAML Schema Options
+
+# See "examples" folder for examples of the simple and extensible versions
+
+# Version 1 - simple
+# PROS:
+# - Simple
+# - Very human readable
+# CONS:
+# - Not extensible
+
 ---
-# TODO: Add proposal of the v1 spec.
-# NOTE: The format has to support both schema definition and schema retrieval.
+Nodes:                                   # Reserved
+    LabelOne:
+        - id: STRING                     # Reserved
+        - attribute_1: <TYPE>
+        - attribute_2: <TYPE>
+        - attribute_3: <TYPE>
+    LabelTwo:
+        - id: STRING                     # Reserved
+        - attribute_1: <TYPE>
+        - attribute_2: <TYPE>
+        - attribute_3: <TYPE>
+EDGES:                                   # Reserved
+    LABEL_THREE:
+        - directed: BOOLEAN              # Reserved
+        - multiedge: BOOLEAN             # Reserved
+        - from_node_type: <NODE>         # Reserved
+        - to_node_type: <NODE>           # Reserved
+        - attribute_1: <TYPE>
+        - attribute_2: <TYPE>
+    LABEL_FOUR:
+        - directed: BOOLEAN              # Reserved
+        - multiedge: BOOLEAN             # Reserved
+        - from_node_type: <NODE>         # Reserved
+        - to_node_type: <NODE>           # Reserved
+        - attribute_1: <TYPE>
+        - attribute_2: <TYPE>
 ...
+
+# Version 2 - extensible
+# PROS:
+# - Edge-type properties distinct from attributes
+# - Extensible
+# CONS:
+# - Extra levels of indenting / complexity
+# - Less human readable
+
+---
+Nodes:                                  # Reserved
+    LabelOne:
+        attributes:
+            - id:                       # Reserved
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_1: 
+                type: STRING            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_2: 
+                type: STRING            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+        extension:
+            - extension_1: <TYPE>
+            - extension_2: <TYPE>
+    LabelTwo:
+        attributes:
+            - id:                       # Reserved
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_1: 
+                type: STRING            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_2: 
+                type: STRING            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+        extension:
+            - extension_1: <TYPE>
+            - extension_2: <TYPE>
+EDGES:                                  # Reserved
+    LABEL_THREE:
+        properties:                     # Reserved
+            - directed: <TYPE>          # Reserved
+            - multiedge: <TYPE>         # Reserved
+            - from_node_type: <NODE>    # Reserved
+            - to_node_type: <NODE>      # Reserved
+        attributes:                     # Reserved
+            - attribute_1:
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_2:
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+        extension:
+            - extension_1: <TYPE>
+            - extension_2: <TYPE>
+    LABEL_FOUR:
+        properties:                     # Reserved
+            - directed: <TYPE>          # Reserved
+            - multiedge: <TYPE>         # Reserved
+            - from_node_type: <NODE>    # Reserved
+            - to_node_type: <NODE>      # Reserved
+        attributes:                     # Reserved
+            - attribute_1:
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+            - attribute_2:
+                type: <TYPE>            # Reserved
+                extension_1: <TYPE>
+                extension_2: <TYPE>
+        extension:
+            - extension_1: <TYPE>
+            - extension_2: <TYPE>
+...
+
+# Open question(s)
+# 1. How best to represent single edge types that go between multiple node types?
+#    e.g. Person KNOWS Person AND Person KNOWS Pet
+#    i.e. KNOWS is the same edge type whether it's Person self-edge or Person to Pet
