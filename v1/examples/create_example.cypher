@@ -18,7 +18,7 @@ CREATE INDEX ON :Student;
 CREATE INDEX ON :Person(name);
 CREATE POINT INDEX ON :School(location);
 CREATE TEXT INDEX personTextIndex ON :Person;
-CREATE VECTOR INDEX embeddingVectorIndex ON :Person(embedding);
+CREATE VECTOR INDEX embeddingVectorIndex ON :Person(embedding) WITH CONFIG {"capacity": 10, "dimension": 3};
 
 CREATE EDGE INDEX ON :IS_STUDENT;
 CREATE EDGE INDEX ON :IS_FAMILY(since);

@@ -1,378 +1,372 @@
 {
-  "nodes":[
+  "edge_indexes": [
     {
-      "labels":[
-        "Person"
-      ],
-      "count":3,
-      "properties":[
-        {
-          "key":"name",
-          "count":2,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"String",
-              "count":2
-            }
-          ]
-        },
-        {
-          "key":"age",
-          "count":2,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":3
-            }
-          ]
-        },
-        {
-          "key":"occupation",
-          "count":1,
-          "filling_factor":66.67,
-          "types":[
-            {
-              "type":"String",
-              "count":2
-            }
-          ]
-        },
-        {
-          "key":"embeddign",
-          "count":1,
-          "filling_factor":33.33,
-          "types":[
-            {
-              "type":"List",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "labels":[
-        "Person",
-        "Child"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"name",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"String",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "labels":[
-        "Person",
-        "Student"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"name",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"String",
-              "count":1
-            }
-          ]
-        },
-        {
-          "key":"interests",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"List",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "labels":[
-        "School"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"title",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"String",
-              "count":1
-            }
-          ]
-        },
-        {
-          "key":"status",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Enum::Status",
-              "count":1
-            }
-          ]
-        },
-        {
-          "key":"location",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Point3D",
-              "count":1
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "edges":[
-    {
-      "edge_type":":IS_FAMILY",
-      "start_node_labels":[
-        "Person"
-      ],
-      "end_node_labels":[
-        "Person",
-        "Child"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"since",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "edge_type":":IS_FAMILY",
-      "start_node_labels":[
-        "Person"
-      ],
-      "end_node_labels":[
-        "Person"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"since",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "edge_type":":IS_FAMILY",
-      "start_node_labels":[
-        "Person",
-        "Child"
-      ],
-      "end_node_labels":[
-        "Person"
-      ],
-      "count":1,
-      "properties":[
-        {
-          "key":"since",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "edge_type":":IS_FAMILY",
-      "start_node_labels":[
-        "Person"
-      ],
-      "end_node_labels":[
-        "Person",
-        "Student"
-      ],
-      "count":2,
-      "properties":[
-        {
-          "key":"since",
-          "count":1,
-          "filling_factor":50.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "edge_type":":IS_STUDENT",
-      "count":1,
-      "start_node_labels":[
-        "Person",
-        "Child"
-      ],
-      "end_node_labels":[
-        "School"
-      ],
-      "properties":[
-        {
-          "key":"start",
-          "count":1,
-          "filling_factor":100.00,
-          "types":[
-            {
-              "type":"Integer",
-              "count":1
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "node_indexes":[
-    {
-      "labels":[
-        "Student"
-      ],
-      "properties":[
-        
-      ],
-      "count":1
-    },
-    {
-      "labels":[
-        "Person"
-      ],
-      "properties":[
-        "name"
-      ],
-      "count":4
-    },
-    {
-      "type":"label_text",
-      "labels":[
-        "Person"
-      ],
-      "properties":[
-        
-      ],
-      "count":4
-    },
-    {
-      "type":"label+property_point",
-      "labels":[
-        "School"
-      ],
-      "properties":[
-        "location"
-      ],
-      "count":1
-    },
-    {
-      "type":"label+property_vector",
-      "labels":[
-        "Person"
-      ],
-      "properties":[
-        "embedding"
-      ],
-      "count":1
-    }
-  ],
-  "edge_indexes":[
-    {
-      "edge_type":[
+      "count": 1,
+      "edge_type": [
         "IS_STUDENT"
       ],
-      "properties":[
-        
-      ],
-      "count":1
+      "properties": []
     },
     {
-      "edge_type":[
+      "count": 5,
+      "edge_type": [
         "IS_FAMILY"
       ],
-      "properties":[
+      "properties": [
         "since"
-      ],
-      "count":4
+      ]
     }
   ],
-  "node_constraints":[
+  "edges": [
     {
-      "type":"unique",
-      "labels":[
+      "count": 1,
+      "end_node_labels": [
         "School"
       ],
-      "properties":[
-        "title"
-      ]
-    },
-    {
-      "type":"existence",
-      "labels":[
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "start",
+          "types": [
+            {
+              "count": 1,
+              "type": "Integer"
+            }
+          ]
+        }
+      ],
+      "start_node_labels": [
+        "Child",
         "Person"
       ],
-      "properties":[
-        "name"
-      ]
+      "type": "IS_STUDENT"
     },
     {
-      "type":"data_type",
-      "labels":[
+      "count": 1,
+      "end_node_labels": [
         "Person"
       ],
-      "properties":[
-        "age"
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "since",
+          "types": [
+            {
+              "count": 1,
+              "type": "Integer"
+            }
+          ]
+        }
       ],
-      "data_type":"INTEGER"
+      "start_node_labels": [
+        "Child",
+        "Person"
+      ],
+      "type": "IS_FAMILY"
+    },
+    {
+      "count": 2,
+      "end_node_labels": [
+        "Person",
+        "Student"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 50,
+          "key": "since",
+          "types": [
+            {
+              "count": 1,
+              "type": "Integer"
+            }
+          ]
+        }
+      ],
+      "start_node_labels": [
+        "Person"
+      ],
+      "type": "IS_FAMILY"
+    },
+    {
+      "count": 1,
+      "end_node_labels": [
+        "Person"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "since",
+          "types": [
+            {
+              "count": 1,
+              "type": "Integer"
+            }
+          ]
+        }
+      ],
+      "start_node_labels": [
+        "Person"
+      ],
+      "type": "IS_FAMILY"
+    },
+    {
+      "count": 1,
+      "end_node_labels": [
+        "Child",
+        "Person"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "since",
+          "types": [
+            {
+              "count": 1,
+              "type": "Integer"
+            }
+          ]
+        }
+      ],
+      "start_node_labels": [
+        "Person"
+      ],
+      "type": "IS_FAMILY"
     }
   ],
-  "enums":[
+  "enums": [
     {
-      "name":"Status",
-      "values":[
+      "name": "Status",
+      "values": [
         "Good",
         "Okay",
         "Bad"
+      ]
+    }
+  ],
+  "node_constraints": [
+    {
+      "labels": [
+        "Person"
+      ],
+      "properties": [
+        "name"
+      ],
+      "type": "existence"
+    },
+    {
+      "labels": [
+        "School"
+      ],
+      "properties": [
+        "title"
+      ],
+      "type": "unique"
+    },
+    {
+      "data_type": "INTEGER",
+      "labels": [
+        "Person"
+      ],
+      "properties": [
+        "age"
+      ],
+      "type": "data_type"
+    }
+  ],
+  "node_indexes": [
+    {
+      "count": 1,
+      "labels": [
+        "Student"
+      ],
+      "properties": []
+    },
+    {
+      "count": 5,
+      "labels": [
+        "Person"
+      ],
+      "properties": [
+        "name"
+      ]
+    },
+    {
+      "count": -1,
+      "labels": [
+        "Person"
+      ],
+      "properties": [],
+      "type": "label_text"
+    },
+    {
+      "count": 1,
+      "labels": [
+        "School"
+      ],
+      "properties": [
+        "location"
+      ],
+      "type": "label+property_point"
+    },
+    {
+      "count": 1,
+      "labels": [
+        "Person"
+      ],
+      "properties": [
+        "embedding"
+      ],
+      "type": "label+property_vector"
+    }
+  ],
+  "nodes": [
+    {
+      "count": 1,
+      "labels": [
+        "Person",
+        "Student"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "interests",
+          "types": [
+            {
+              "count": 1,
+              "type": "List"
+            }
+          ]
+        },
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "name",
+          "types": [
+            {
+              "count": 1,
+              "type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "count": 1,
+      "labels": [
+        "Child",
+        "Person"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "name",
+          "types": [
+            {
+              "count": 1,
+              "type": "String"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "count": 1,
+      "labels": [
+        "School"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "title",
+          "types": [
+            {
+              "count": 1,
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "status",
+          "types": [
+            {
+              "count": 1,
+              "type": "Enum::Status"
+            }
+          ]
+        },
+        {
+          "count": 1,
+          "filling_factor": 100,
+          "key": "location",
+          "types": [
+            {
+              "count": 1,
+              "type": "Point3D"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "count": 3,
+      "labels": [
+        "Person"
+      ],
+      "properties": [
+        {
+          "count": 1,
+          "filling_factor": 33.333333333333336,
+          "key": "embedding",
+          "types": [
+            {
+              "count": 1,
+              "type": "List"
+            }
+          ]
+        },
+        {
+          "count": 2,
+          "filling_factor": 66.66666666666667,
+          "key": "occupation",
+          "types": [
+            {
+              "count": 2,
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "filling_factor": 100,
+          "key": "name",
+          "types": [
+            {
+              "count": 3,
+              "type": "String"
+            }
+          ]
+        },
+        {
+          "count": 3,
+          "filling_factor": 100,
+          "key": "age",
+          "types": [
+            {
+              "count": 3,
+              "type": "Integer"
+            }
+          ]
+        }
       ]
     }
   ]
