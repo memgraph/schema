@@ -32,13 +32,13 @@
   "node_indexes": [
       { "labels": [""], "properties": [""], "count": 0, "examples": [{}] },
       { "labels": [""], "properties": [""], "count": 0, "examples": [{}],
-        "type": "label|label+property|label+property_point|label_text|label+property_text" }
+        "type": "label|label+property|label+property_point|label_text|label+property_text|label+property_vector" }
   ],
 
   "edge_indexes": [
       { "edge_type": "", "properties": [""], "count": 0, "examples": [{}] },
       { "edge_type": "", "properties": [""],  "count": 0, "examples": [{}],
-        "type": "edge_type|edge_type+property|edge_type+property_point|label_text|label+property_text" }
+        "type": "edge_type|edge_type+property|edge_type+property_point|edge_type_text|edge_type+property_text|edge_type+property_vector" }
   ],
 
   "node_constraints": [
