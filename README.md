@@ -13,4 +13,5 @@ NOTE: `.json` examples are formatter using https://jsonformatter.curiousconcept.
 ## v1
 
 * [example graph](v1/examples/create_example.cypher)
-* [example schema](v1/examples/schema_example.json)
+* [example json schema](v1/examples/schema_example.json)
+* [example yaml schema](v1/examples/schema_example.yaml)
