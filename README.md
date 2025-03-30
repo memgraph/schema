@@ -7,6 +7,7 @@ The standard should be the basis for building many different applications levera
 * graph query language code completion
 * tools to assist with schema changes by estimating the implications
 * LLM and, in general, AI applications.
+* Graph coloring based on the schema
 
 NOTE: `.json` examples are formatter using https://jsonformatter.curiousconcept.com/ (2 Space Tab).
 
