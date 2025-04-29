@@ -7,9 +7,11 @@ The standard should be the basis for building many different applications levera
 * graph schema visualizers
 * graph query language code completion
 * tools to assist with schema changes by estimating the implications
-* LLM and, in general, AI applications.
+* LLM and, in general, AI applications:
+  * providing LLMs the right context to generate relevant knowledge retrieval queries
+  * implementing a generator of a diverse set of queries to, e.g., fine-tune an LLM
 
-NOTE: `.json` examples are formatter using https://jsonformatter.curiousconcept.com/ (2 Space Tab).
+NOTE: `.json` examples are formatted using https://jsonformatter.curiousconcept.com/ (2 Space Tab).
 
 ## v1
 
