@@ -1,0 +1,129 @@
+# LPG YAML Schema Options - examples
+
+# Version 1 - simple
+---
+Nodes:
+    Person:
+        - id: STRING
+        - first_name: STRING
+        - last_name: STRING
+        - years_of_age: INT
+        - date_of_birth: DATETIME
+    Address:
+        - id: STRING
+        - address_line_1: STRING
+        - address_line_2: STRING
+        - city: STRING
+        - post_code: STRING
+EDGES:
+    LIVES_AT:
+        - directed: BOOLEAN
+        - multiedge: BOOLEAN
+        - from_node_type: Person
+        - to_node_type: Address
+        - start_date: DATETIME
+        - end_date: DATETIME
+    WORKS_AT:
+        - directed: BOOLEAN
+        - multiedge: BOOLEAN
+        - from_node_type: Person
+        - to_node_type: Address
+        - start_date: DATETIME
+        - end_date: DATETIME
+...
+
+# Version 2 - extensible
+---
+Nodes:
+    Person:
+        attributes:
+            - id:
+                type: STRING
+                mandatory: BOOLEAN
+            - first_name: 
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - last_name: 
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - years_of_age: 
+                type: INT
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - date_of_birth: 
+                type: DATETIME
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+        extension:
+            - count: INT
+            - filling_factor: FLOAT
+    Address:
+        attributes:
+            - id:
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - address_line_1:
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - address_line_2:
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - city:
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+            - post_code:
+                type: STRING
+                mandatory: BOOLEAN
+                indexed: BOOLEAN
+                default: STRING
+        extension:
+            - count: INT
+            - filling_factor: FLOAT
+EDGES:
+    LIVES_AT:
+        properties:                
+            - directed: BOOLEAN    
+            - multiedge: BOOLEAN   
+            - from_node_type: Person
+            - to_node_type: Address
+        attributes:                
+            - start_date:
+                type: DATETIME     
+                mandatory: BOOLEAN
+            - end_date:
+                type: DATETIME     
+                mandatory: BOOLEAN
+        extension:
+            - count: INT
+            - filling_factor: FLOAT
+    WORKS_AT:
+        properties:                
+            - directed: BOOLEAN    
+            - multiedge: BOOLEAN   
+            - from_node_type: Person
+            - to_node_type: Address 
+        attributes:                
+            - start_date:
+                type: DATETIME     
+                mandatory: BOOLEAN
+            - end_date:
+                type: DATETIME     
+                mandatory: BOOLEAN
+        extension:
+            - count: INT
+            - filling_factor: FLOAT
+...
