@@ -8,9 +8,13 @@ NOTE: `.json` examples are formatted using https://jsonformatter.curiousconcept.
 
 The standard should be the basis for building many different applications leveraging the specification. Examples of such applications are:
 * What's the right data model in the first place (how should people model, and what's the right approach), helping in communication
+
+* data validity checks
+* semantic rules and derived knowledge (AKA inference)
 * graph schema visualizers
 * graph query language code completion
 * tools to assist with schema changes by estimating the implications
+* tools to generate mock graphs for testing and staging (AKA fakers)
 * Graph coloring based on the schema
 * LLM and, in general, AI applications:
   * providing LLMs the right context to generate relevant knowledge retrieval queries
@@ -20,7 +24,8 @@ The standard should be the basis for building many different applications levera
 
 * [memgraph](https://github.com/memgraph/memgraph) outputs [v1](#v1) under `SHOW SCHEMA INFO;` query
 * [memgraph lab](https://memgraph.com/docs/memgraph-lab) uses [v1](#v1) under graph schema and auto completion features
-* [ai-toolkit](https://github.com/memgraph/ai-toolkit) uses [v1](#v1) under the [automatic SQL to graph agent](https://github.com/memgraph/ai-toolkit/tree/main/integrations/agents).
+* [Data modeling under Lab](https://memgraph.com/docs/memgraph-lab) helps you build the model/schema/ontology
+* [ai-toolkit](https://github.com/memgraph/ai-toolkit) uses [v1](#v1) under the [automatic SQL to graph agent](https://github.com/memgraph/ai-toolkit/tree/main/agents/sql2graph).
 
 ## versions
 
