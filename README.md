@@ -8,7 +8,6 @@ NOTE: `.json` examples are formatted using https://jsonformatter.curiousconcept.
 
 The standard should be the basis for building many different applications leveraging the specification. Examples of such applications are:
 * What's the right data model in the first place (how should people model, and what's the right approach), helping in communication
-
 * data validity checks
 * semantic rules and derived knowledge (AKA inference)
 * graph schema visualizers
